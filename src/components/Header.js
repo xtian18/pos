@@ -3,17 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarcode, faPlus, faTable, faBasketShopping, faUser,faGear, faCreditCard, faRightFromBracket, faPowerOff } from '@fortawesome/free-solid-svg-icons'
 
 
-const Header = () => {
+const Header = ({ setOpenModal }) => {
   return (
     <div>
       {/* left button list */}
       <div className='flex space-x-2 float-left '>
         <div>
-          <button className="bg-teal-400 hover:bg-teal-500 text-white rounded-l inline-flex items-center">
+          <button onClick={setOpenModal} className="bg-teal-400 hover:bg-teal-500 text-white rounded-l inline-flex items-center">
             <span className='py-2 px-4 bg-black/10'><FontAwesomeIcon icon={faBarcode} /></span>
             <span className='py-2 px-4 '>Products</span>
           </button>
-          <button className="bg-amber-400 hover:bg-amber-500 text-white py-2 px-4 rounded-r inline-flex items-center">
+          <button onClick={setOpenModal} className="bg-amber-400 hover:bg-amber-500 text-white py-2 px-4 rounded-r inline-flex items-center">
             <span><FontAwesomeIcon icon={faPlus} /></span>
           </button>
         </div>
