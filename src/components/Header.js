@@ -31,7 +31,7 @@ const Header = () => {
         <div>
           <button className="bg-cyan-400 hover:bg-cyan-500 text-white rounded-l inline-flex items-center">
             <span className='py-2 px-4 bg-black/10'><FontAwesomeIcon icon={faBasketShopping} /></span>
-            <span className='py-2 px-4 '>Products</span>
+            <span className='py-2 px-4 '>Open Tabs</span>
           </button>
         </div>
 
